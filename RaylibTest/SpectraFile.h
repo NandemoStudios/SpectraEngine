@@ -8,13 +8,16 @@ using namespace std;
 class File {
 public:
 	list<string> SaveData;
-	bool ReplaceData = true;
+	bool OverwriteData = true;
 
 	void AddData(string data) {
 		SaveData.push_front(data);
 	}
 
 	void SaveDataToFile(string filename) {
+		if (OverwriteData) {
+			ClearDataStore();
+		}
 		ofstream Datafile(filename);
 		for (string str : SaveData) {
 			Datafile << str;
