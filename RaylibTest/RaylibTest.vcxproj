@@ -128,10 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="SpectraShapes.cpp" />
+    <ClCompile Include="SpectraShapes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SpectraFile.h" />
+    <ClInclude Include="SpectraInput.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

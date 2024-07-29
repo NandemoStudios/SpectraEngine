@@ -18,12 +18,15 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SpectraShapes.cpp">
+    <ClCompile Include="SpectraShapes.h">
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SpectraFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpectraInput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
