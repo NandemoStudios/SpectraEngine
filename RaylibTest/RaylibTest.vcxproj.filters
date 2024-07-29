@@ -29,5 +29,8 @@
     <ClInclude Include="SpectraInput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Spectra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

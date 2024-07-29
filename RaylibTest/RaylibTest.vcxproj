@@ -131,6 +131,7 @@
     <ClCompile Include="SpectraShapes.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Spectra.h" />
     <ClInclude Include="SpectraFile.h" />
     <ClInclude Include="SpectraInput.h" />
   </ItemGroup>

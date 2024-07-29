@@ -1,10 +1,15 @@
 #include "SpectraFile.h"
+#include "SpectraInput.h"
+#include "Spectra.h"
 
 using namespace std;
 
 int main() {
-	File SaveData;
-	SaveData.AddData("Testing");
-	SaveData.SaveDataToFile("SaveData.txt");
-	SaveData.ClearDataStore();
+	Spectra Engine;
+
+	AssignKey Forward = AssignKey("a");
+
+	while (Engine.IsRunning) {
+		
+	}
 }

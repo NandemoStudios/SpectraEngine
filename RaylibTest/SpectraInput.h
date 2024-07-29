@@ -8,8 +8,8 @@ public:
 	bool IsKeyReleased = true;
 	char Key;
 
-	AssignKey(char AssignedKey) {
-		Key = AssignedKey;
+	AssignKey(string AssignedKey) {
+		Key = AssignedKey.data();
 	}
 
 	bool IsKeyDown() {
