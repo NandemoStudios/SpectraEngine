@@ -9,7 +9,7 @@ public:
 	char Key;
 
 	AssignKey(string AssignedKey) {
-		Key = AssignedKey.data();
+		Key = *AssignedKey.data();
 	}
 
 	bool IsKeyDown() {

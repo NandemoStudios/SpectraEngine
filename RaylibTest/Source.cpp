@@ -10,6 +10,8 @@ int main() {
 	AssignKey Forward = AssignKey("a");
 
 	while (Engine.IsRunning) {
-		
+		if (Forward.IsKeyDown()) {
+			cout << "The Key is down";
+		}
 	}
 }

@@ -30,3 +30,16 @@ public:
 		Radius = radius;
 	}
 };
+
+class Triangle {
+public:
+	int PointOne;
+	int PointTwo;
+	int PointThree;
+
+	Triangle(int TopPoint, int LeftPoint, int RightPoint) {
+		PointOne = TopPoint;
+		PointTwo = LeftPoint;
+		PointThree = RightPoint;
+	}
+};
