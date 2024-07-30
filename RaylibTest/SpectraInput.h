@@ -5,7 +5,8 @@ using namespace std;
 
 class AssignKey {
 public:
-	bool IsKeyReleased = true;
+	bool keyPressed = false;
+	bool prevKeyState = keyPressed;
 	char Key;
 
 	AssignKey(string AssignedKey) {
@@ -24,30 +25,19 @@ public:
 		}
 	}
 
-	bool IsKeyUp() {
-		char ch;
-		ch = _getch();
-
-		if (ch != Key) {
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-
 	bool IsKeyJustPressed() {
-		char ch;
-		ch = _getch();
 
-		if (IsKeyReleased && IsKeyDown()) {
-			return true;
-			IsKeyReleased = false;
+		bool currentKeyState = IsKeyDown();
+
+		if (currentKeyState && !prevKeyState && !keyPressed) {
+			keyPressed = true;
 		}
 		else {
-			if (not IsKeyReleased && IsKeyDown()) {
-				return false;
-			}
+			keyPressed = false;
 		}
+
+		prevKeyState = currentKeyState;
+
+		return keyPressed;
 	}
 };

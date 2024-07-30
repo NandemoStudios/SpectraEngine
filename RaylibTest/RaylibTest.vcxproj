@@ -134,6 +134,7 @@
     <ClInclude Include="Spectra.h" />
     <ClInclude Include="SpectraFile.h" />
     <ClInclude Include="SpectraInput.h" />
+    <ClInclude Include="SpectraWindow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
