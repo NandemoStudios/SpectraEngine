@@ -1,3 +1,6 @@
+// String is used for getting the inputs from the developer in a way that is easy
+// It removes the need for converting from string to char type
+// Conio is used for getting the key inputs of the player/developer
 #include <string>
 #include <conio.h>
 

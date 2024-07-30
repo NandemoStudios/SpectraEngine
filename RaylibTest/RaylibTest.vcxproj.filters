@@ -32,8 +32,5 @@
     <ClInclude Include="Spectra.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SpectraWindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
