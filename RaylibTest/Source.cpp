@@ -5,13 +5,9 @@
 using namespace std;
 
 int main() {
-	Spectra Engine;
+	File SaveData;
 
-	AssignKey Forward = AssignKey("a");
-
-	while (Engine.IsRunning) {
-		if (Forward.IsKeyJustPressed()) {
-			cout << "The Key is down";
-		}
-	}
+	SaveData.AddData("Hello, World!");
+	SaveData.AddData("This is some test data");
+	SaveData.Save("SaveData.txt");
 }
