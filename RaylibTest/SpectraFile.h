@@ -23,11 +23,13 @@ public:
 		if (OverwriteData) {
 			ClearDataStore();
 		}
-		ofstream Datafile(filename);
-		for (string str : SaveData) {
-			Datafile << str;
+		ofstream SaveFile;
+		SaveFile.open(filename, ios::out);
+		for (string data : SaveData)
+		{
+			SaveFile << data;
 		}
-		Datafile.close();
+		SaveFile.close();
 	}
 	void ClearDataStore() {
 		SaveData.clear();
