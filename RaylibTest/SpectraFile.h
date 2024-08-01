@@ -12,7 +12,7 @@ using namespace std;
 
 class File {
 public:
-	list<string> SaveData;
+	list<string> SaveData = {"Something"};
 	bool OverwriteData = true;
 
 	void AddData(string data) {
